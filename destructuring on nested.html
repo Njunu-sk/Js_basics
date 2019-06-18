@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const LOCAL_FORECAST={
+            today : {min:76 , max:82},
+            tomorrow : {min:21 , max:45}
+        }
+        function getmaxtmrw(forecast){
+const {tomorrow :{max :maxoftmrw}}=forecast
+return maxoftmrw
+        }
+        console.log (getmaxtmrw(LOCAL_FORECAST))
+        </script>
+</body>
+</html>
