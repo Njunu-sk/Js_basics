@@ -1,0 +1,24 @@
+;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function checkscope() {
+   "use strict";
+   let i = "function scope"
+   if (true){
+       let i = "block scope"
+       console.log ("This is expected to be the block scope= "+i)
+   }  
+   console.log ("This is expected to be the function scope= "+i)
+   return i;
+}
+checkscope();
+    </script>
+</body>
+</html>
